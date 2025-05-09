@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--grey-900);
+    color: var(--white);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.link_container {
+    background-color: var(--grey-800);
+    margin: 50px auto;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+} 
+
+.link_name {
+    margin-bottom: 20px;
+}
+
+.link_description p {
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-size: 14px;
+    color: var(--green);
+}
+
+.link_buttons a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color:white;
+    background-color: var(--grey-700);
+    border-radius: 10px;
+    font-weight: 400;
+    width: 100%;
+    transition: all 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+    background-color: var(--green);
+    color: var(--grey-900);
+    box-shadow: 5px 8px 7px rgb(17, 17, 17);
+    transform: translateY(-3px);
+
+}
+
+a:active {
+    transform: scale(0.97);
+
+}
+
+img {
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+
+footer a {
+    color: skyblue;
+    text-decoration: none;
+}
+ 
+@media (max-width:375px) {
+    img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .link_container {
+    margin: 20px auto;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 12px;
+    }
+
+    .link_buttons a {
+        font-size: 16px; 
+        font-size: 14px; /* Adjust the font size of the buttons */
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+        
+}
